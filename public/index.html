@@ -1,0 +1,1346 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Joel Alenchery</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <style>
+  /********************************************
+* 	reset from
+* 	http://meyerweb.com/eric/tools/css/reset/
+*******************************************/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/****************
+*	COMMONS
+****************/
+
+body,
+html {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 13px;
+    color: #40484f;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.46153846;
+    text-align: left;
+    -webkit-text-size-adjust: 100%;
+}
+
+p {
+    display: block;
+    margin-bottom: 1.3em;
+}
+
+a {
+    color: #0095ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0c65a5;
+    text-decoration: underline;
+}
+
+ul {
+    margin-top: 1rem;
+}
+
+li {
+    list-style-type: square;
+    list-style-position: outside;
+    margin-left: 1.3em;
+}
+
+.highlights>li>p {
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.67rem;
+}
+
+h3 {
+    font-size: 1.27rem;
+}
+
+em {
+    color: #757575;
+}
+
+blockquote {
+    margin-bottom: 1em;
+}
+
+strong {
+    font-weight: 700;
+}
+
+
+/* main container */
+
+#resume {
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+
+/* every section wrapper */
+
+.section {
+    margin-bottom: 1rem;
+}
+
+section .location {
+    margin-right: .5em;
+    color: #606d76;
+    font-weight: 700;
+}
+
+#contact {
+    margin-top: .5rem;
+}
+
+#profiles .item {
+    padding: 0;
+}
+
+#header>#profiles,
+#header>#contact,
+#skills,
+#languages,
+#interests {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+
+#header>div {
+    line-height: 1.5;
+}
+
+#header>div>div {
+    margin-right: 1.2em;
+}
+
+#header h1.name {
+    font-size: 2.8rem;
+    font-weight: 100;
+    line-height: 100%;
+}
+
+#header h2.label {
+    color: #202931;
+    font-size: 1.47rem;
+    font-weight: 300;
+}
+
+#header .picture {
+    width: 11em;
+    float: right;
+    border-radius: 4px;
+}
+
+.main-summary {
+    background: #f1f8ff;
+    padding: 1.2em 1em;
+    margin-top: 1rem;
+}
+
+.main-summary p {
+    margin: .15em 0 0;
+}
+
+h2.section-title {
+    display: inline-block;
+    background: #fff;
+    padding: 0 1em 0.3em 0;
+    color: #ff6d1f;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    font-size: .9rem;
+}
+
+.section>header {
+    position: relative;
+}
+
+.fa {
+    margin-right: 0.25em;
+}
+
+.section>header::after {
+    position: absolute;
+    left: 0;
+    top: .7em;
+    height: 1px;
+    background: #ccc;
+    content: "";
+    width: 100%;
+    z-index: -100;
+    display: block;
+}
+
+.section.main-summary>section {
+    margin: 0;
+}
+
+.section>section>header {
+    font-size: 1.38rem;
+    position: relative;
+    margin-top: .7em;
+}
+
+.section>section>header:first-of-type {
+    margin: 0;
+}
+
+.section>section>header .space-left {
+    position: absolute;
+    left: -1.56rem;
+    top: 5px;
+    color: #aaa;
+    line-height: 1;
+    opacity: 0;
+}
+
+.position,
+.company,
+.organization,
+.institution,
+.date,
+.area,
+.studyType,
+.title,
+.awarder {
+    display: inline;
+}
+
+.position,
+.studyType,
+.area,
+.title,
+.language,
+.name {
+    font-weight: 600;
+}
+
+.company::before,
+.institution::before,
+.organization::before,
+.awarder::before {
+    content: "at "
+}
+
+.company,
+.institution,
+.organization,
+.awarder {
+    color: #606d76;
+    font-weight: 400;
+}
+
+.section header .date {
+    font-size: 1rem;
+    display: inline-table;
+    padding: .1em 0;
+    font-weight: 600;
+}
+
+ul.keywords,
+ul.courses {
+    margin-top: .5em;
+}
+
+ul.keywords li,
+ul.courses li {
+    display: inline-block;
+    margin: 2px 2px 2px 0;
+    padding: 4px 5px 5px;
+    font-size: .9rem;
+    line-height: 1;
+    text-transform: lowercase;
+    color: #3e6d8e;
+    background-color: #dfeaf1;
+    border: 0 solid #dfeaf1;
+    white-space: nowrap;
+}
+
+ul.keywords li:hover,
+ul.courses li:hover {
+    background: #dfeaf0;
+}
+
+.item {
+    padding: .5em 0;
+}
+
+.gpa {
+    padding-bottom: .5em;
+}
+
+.fa.social {
+    font-size: 1.1em;
+}
+
+
+/* Social Media Brand Colors */
+
+.google-plus {
+    color: #dd4b39;
+}
+
+.tumblr {
+    color: #32506d;
+}
+
+.foursquare {
+    color: #0072b1;
+}
+
+.facebook {
+    color: #3b5998;
+}
+
+.linkedin {
+    color: #007bb6;
+}
+
+.pinterest {
+    color: #cb2027;
+}
+
+.dribbble {
+    color: #ea4c89;
+}
+
+.instagram {
+    color: #517fa4;
+}
+
+.twitter {
+    color: #00aced;
+}
+
+.soundcloud {
+    color: #ff3a00;
+}
+
+.wordpress {
+    color: #21759b;
+}
+
+.youtube {
+    color: #bb0000;
+}
+
+.github {
+    color: #171515;
+}
+
+.stack-overflow {
+    color: #828386;
+    position: relative;
+}
+
+.flickr {
+    color: #ff0084;
+}
+
+.stack-overflow::after {
+    position: absolute;
+    left: 0;
+    content: '\f16c';
+    color: #f68a1f;
+    overflow: hidden;
+    height: 100%;
+}
+
+.telegram {
+    color: #2291c3;
+}
+
+#languages .item,
+#skills .item,
+#interests .item {
+    width: 15em;
+    padding: 0 .5em .5em 0;
+    border-bottom: none;
+}
+
+#skills .item {
+    width: 16em;
+}
+
+#skills .item .keywords {
+    width: 15em;
+}
+
+
+/* Skill chart */
+
+.level {
+    margin-bottom: .5em;
+}
+
+.level .bar {
+    border: 1px solid #ddd;
+    display: block;
+    width: 10em;
+    height: 5px;
+    position: relative;
+}
+
+.level .bar::after {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    background: black;
+    height: 5px;
+}
+
+.level.beginner .bar::after {
+    background: #EB5F51;
+    width: 2.5em;
+}
+
+.level.intermediate .bar::after {
+    background: #ffdf1f;
+    width: 5em;
+}
+
+.level.advanced .bar::after,
+.level.fluent .bar::after {
+    background: #5CB85C;
+    width: 7.5em;
+}
+
+.level.master .bar::after,
+.level.native.speaker .bar::after {
+    background: #59C596;
+    width: 10em;
+}
+
+#references .item {
+    padding-left: .5em;
+    border-left: 5px solid #ff6d1f;
+}
+
+.toggle-item {
+  visibility: hidden;
+}
+
+/******************
+*	HELPER CLASSES
+******************/
+
+.clear::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.display {
+    display: block;
+    opacity: 1 !important;
+}
+
+.margin1 {
+    margin-bottom: .5rem;
+}
+
+
+/****************
+*		TABLET
+****************/
+
+@media screen and (min-width: 602px) {
+    #resume {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+
+/****************
+*		LAPTOP
+****************/
+
+@media screen and (min-width: 1025px) {
+    li {
+        margin-left: 1.5em;
+    }
+    #resume {
+        width: 820px;
+        margin: 2rem auto;      
+    }
+    .section>section>header .space-left {
+        opacity: 1;
+        cursor: pointer;
+    }
+    .section>section {
+        margin-left: 1.67rem;
+    }
+    .toggle-item {
+        transform: translate(-9999px);
+    }
+    .toggle-item+label {
+        display: block;
+        margin-top: -16px;
+    }
+    .toggle-item:checked+label:after {
+        content: '\f0d7';
+    }
+    .toggle-item+label:after {
+        float: left;
+        cursor: pointer;
+        margin-left: -20px;
+        color: #aaa;
+        font-size: 16px;
+        content: '\f0da';
+        font-family: Fontawesome;
+    }
+    .toggle-item~.item {
+        height: 0;
+        opacity: 0;
+    }
+    .toggle-item:checked~.item {
+        height: auto;
+        opacity: 1;
+        transition: all .5s linear;
+    }
+    .company::before,
+    .institution::before,
+    .organization::before,
+    .awarder::before {
+        content: "| ";
+    }
+    .header-left {
+        float: left;
+        width: 70%;
+        word-break: normal;
+    }
+    .section header .date {
+        float: right;
+        padding: .2em;
+    }
+    .display {
+        display: none;
+    }
+    .display:not(.none) {
+        display: block;
+    }
+}
+
+@media print {
+    #resume {
+        margin: 0;
+        padding: 0;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+        line-height: 1.3;
+        /*font-family: Arial, Georgia, "Lucida Grande", sans-serif;*/
+    }
+    @page {
+        margin: 1cm 1.4cm;
+    }
+    .item-count {
+        display: none;
+    }
+    .company::before,
+    .institution::before,
+    .organization::before,
+    .awarder::before {
+        content: "at ";
+    }
+    .main-summary {
+        padding: 2rem 0;
+    }
+    .section {
+        margin: .8rem 0;
+        padding: 0;
+    }
+    .section header {
+        padding-bottom: .15rem;
+    }
+    .section .location {
+        padding-bottom: .15rem;
+    }
+    .stack-overflow::after {
+        content: "";
+    }
+    .fa.social {
+        color: #828386;
+    }
+    ul {
+        margin-top: .4em;
+    }
+    ul,
+    li {
+        padding: 0;
+    }
+    ul.keywords li,
+    ul.courses li {
+        margin: 0;
+        padding: 0;
+        font-size: .8rem;
+        text-transform: lowercase;
+    }
+    ul.keywords li::after,
+    ul.courses li::after {
+        padding: 0 0 0 .1rem;
+        content: " |";
+    }
+    ul.keywords::before,
+    ul.courses::before {
+        font-size: .8rem;
+        font-weight: 600;
+    }
+    ul.keywords::before {
+        content: "Skills acquired: ";
+    }
+    #skills .keywords::before {
+        content: '';
+    }
+    .section p {
+        margin: 0;
+        padding: 0;
+    }
+    ul.courses::before {
+        content: "Major courses: ";
+    }
+    ul.keywords li:last-of-type::after,
+    ul.courses li:last-of-type::after {
+        content: "";
+    }
+    .level em {
+        font-style: normal;
+        padding: .1em 0;
+    }
+    .level .bar {
+        display: none;
+    }
+    #profiles .item {
+        padding: 0;
+    }
+    .item.display {
+        display: block;
+        opacity: 1 !important;
+    }
+}
+
+  </style>
+  
+  </head>
+  <body>
+  
+  <div id="resume">
+    	<header id="header" class="clear">
+    		<img class="picture" src="https://avatars0.githubusercontent.com/u/107628?v&#x3D;4" alt="Joel Alenchery" />
+    		<div class="middle">
+    			<h1 class="name">Joel Alenchery</h1>
+    			<h2 class="label">Principal Software Architect @Nexsales Inc</h2>
+    		</div>
+    		
+    		<span class="location">
+    			<span class="city">Mumbai,</span> 
+    			<span class="region">Maharashtra</span> 
+    			<span class="countryCode">IN</span> 
+    		</span>
+    		
+    
+    		<div id="contact">
+    			<div class="email">
+    				<span class="fa fa-envelope-o"></span>
+    				<a href="mailto:joel@alenchery.org">joel@alenchery.org</a>
+    			</div>
+    		</div>
+    
+    		<div id="profiles">
+    			<div class="item">
+    				<div class="username">
+    					<span class="fa fa-linkedin linkedin social"></span>
+    					<span class="url">
+    						<a target="_blank" href="https://www.linkedin.com/in/joel-alenchery">joel-alenchery</a>
+    					</span> 
+    				</div>
+    			</div>
+    			<div class="item">
+    				<div class="username">
+    					<span class="fa fa-github github social"></span>
+    					<span class="url">
+    						<a target="_blank" href="https://github.com/icecubed">icecubed</a>
+    					</span> 
+    				</div>
+    			</div>
+    			<div class="item">
+    				<div class="username">
+    					<span class="fa fa-twitter twitter social"></span>
+    					<span class="url">
+    						<a target="_blank" href="https://twitter.com/icecubed">icecubed</a>
+    					</span> 
+    				</div>
+    			</div>
+    			<div class="item">
+    				<div class="username">
+    					<span class="fa fa-instagram instagram social"></span>
+    					<span class="url">
+    						<a target="_blank" href="https://www.instagram.com/joelalen">joelalen</a>
+    					</span> 
+    				</div>
+    			</div>
+    			<div class="item">
+    				<div class="username">
+    					<span class="fa fa-gitconnected gitconnected social"></span>
+    					<span class="url">
+    						<a target="_blank" href="https://gitconnected.com/icecubed">icecubed</a>
+    					</span> 
+    				</div>
+    			</div>
+    		</div>
+    	</header>
+    
+    	<section class="section main-summary">
+    		<section>
+    			<div><p>A dynamic and enthusiastic full stack engineer with about a decade and a half of experience in software development. My passion lies in building great products while enabling others to perform their roles effectively. I have architected and built horizontally scalable backends atop NoSql DBs; distributed RESTful API services in NodeJs; and web-based front ends with modern highly interactive Ajax UIs using frameworks like AngularJs.</p></div>
+    		</section>
+    	</section>
+    
+    <section class="section margin1">
+    	<header>
+    		<h2 class='section-title'>Skills</h2>
+    	</header>
+    	<section id="skills">
+    		<div class="item">
+    			<h3 class="name">
+    				Frontend
+    			</h3>
+    			 
+    			<div class="level advanced">
+    				<em>Advanced</em>
+    				<div class="bar"></div>
+    			</div>
+    			<ul class="keywords">
+    				<li>Javascript</li>
+    				<li>AngularJS</li>
+    				<li>HTML</li>
+    				<li>CSS</li>
+    				<li>jQuery</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Backend
+    			</h3>
+    			 
+    			<div class="level advanced">
+    				<em>Advanced</em>
+    				<div class="bar"></div>
+    			</div>
+    			<ul class="keywords">
+    				<li>NodeJS</li>
+    				<li>Python</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Data Stores
+    			</h3>
+    			 
+    			<div class="level advanced">
+    				<em>Advanced</em>
+    				<div class="bar"></div>
+    			</div>
+    			<ul class="keywords">
+    				<li>MySQL</li>
+    				<li>PostgreSQL</li>
+    				<li>Riak</li>
+    				<li>Solr</li>
+    				<li>Redis</li>
+    				<li>MemcacheD</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Techniques
+    			</h3>
+    			 
+    			<div class="level advanced">
+    				<em>Advanced</em>
+    				<div class="bar"></div>
+    			</div>
+    			<ul class="keywords">
+    				<li>Web applications</li>
+    				<li>Distributed architecture</li>
+    				<li>Micro services</li>
+    				<li>Mobile First, Responsive design</li>
+    				<li>Test-driven development</li>
+    				<li>Agile methodology</li>
+    				<li>Stateful UI Design</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Devops
+    			</h3>
+    			 
+    			<div class="level intermediate">
+    				<em>Intermediate</em>
+    				<div class="bar"></div>
+    			</div>
+    			<ul class="keywords">
+    				<li>Google Cloud</li>
+    				<li>Docker</li>
+    				<li>Jenkins</li>
+    				<li>Ancible</li>
+    			</ul>
+    		</div>
+    	</section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Work Experience <span class="item-count">(5)</span></h2>
+      </header>
+    
+      <section id="work">
+        <section class="work-item">
+    
+            <input id="work-item-0" type="checkbox" class="toggle-item" checked="checked" />
+            <label for="work-item-0"></label>
+    
+    			<header>
+    				<div class="position">Principal Software Architect</div>
+    				<div class="company">Nexsales Inc</div>
+    				<div class="date">
+    				  <span class="startDate">March 2016</span> 
+    					<span class="endDate">- Current</span>
+    				</div>
+    			</header>
+    			
+    			<span class="location">
+    				<span class="fa fa-map-marker"></span> 
+    			</span>
+        	<span class="website">
+        		<a target="_blank" href="http://www.nexsales.com/">http://www.nexsales.com/</a>
+        	</span>  
+        	<ul class="keywords">
+          	<li>NodeJs</li>
+          	<li>AngularJs</li>
+          	<li>Riak</li>
+          	<li>MYSql</li>
+          	<li>BeanstalkD</li>
+          	<li>Redis</li>
+          	<li>MemCache</li>
+          	<li>Solr</li>
+          	<li>Material Design</li>
+          	<li>WebRTC</li>
+          	<li>WebSockets</li>
+          	<li>REST APIs</li>
+          	<li>JIRA</li>
+          	<li>Confluence</li>
+          	<li>Git</li>
+          	<li>Jenkins</li>
+          	<li>Ancible</li>
+          	<li>Google Compute Engine</li>
+          	<li>Docker</li>
+        	</ul>
+        	<div class="item" id="work-item">
+            <div class="summary">
+              <p><p>Nexsales is a sales acceleration company specializing in demand generation and lead discovery. </p><p>As their principal architect, I was instrumental in designing and bringing to market 2 major products from scratch.</p></p>
+            </div>
+            <ul class="highlights">
+                <li><p>Products that I helped build from the ground up: </p><p><a target="_blank" href="https://www.voicereach.us/voicereach-platform/">Voicereach</a>: A sales conversation enabler with an SLA to provide 8X boost in productivity </p><p><a target="_blank" href="https://rightleads.io/">RightLeads</a>: A proprietary lead discovery engine using machine learning to find and score relevant leads in an ever-growing database focusing on IT security</p></li>
+                <li><p> Main responsibilities included design, develop, test, deploy, maintain and improve software inside an agile development framework. Manage individual project priorities, deadlines and deliverables. Mentor and grow a team of 5 software engineers</p></li>
+                <li><p>Worked closely with customers to understand opportunities where technology can be used to drive business efficiently and effectively</p></li>
+                <li><p>Early adopters of a single-page app in AngularJS leveraging WebRTC to implement VoIP in browser.</p></li>
+                <li><p>Studied user behaviour to optimize role-based user experience leveraging material design</p></li>
+                <li><p>Studied B2B marketing practices and designed closed-loop marketing strategy and successfully implement the ideas into the VoiceReach product</p></li>
+                <li><p>Involved in implementing distributed VoIP backend with opensips, Freeswitch and Twilio</p></li>
+                <li><p>Feature & technical design for resilient REST-based microservices in NodeJS</p></li>
+                <li><p>Technical design of horizontally scalable and highly available data store using Riak DB</p></li>
+                <li><p>Designed a highly reactive, stateful, web-socket based real-time UI to enable browser-based VoIP capabilities</p></li>
+                <li><p>UI and backend to deliver a fast intuitive way to build complex search queries over a large data set of contacts to deliver a seamless contact list build experience.</p></li>
+            </ul>
+        	</div>
+        </section>
+        <section class="work-item">
+    
+            <input id="work-item-1" type="checkbox" class="toggle-item" />
+            <label for="work-item-1"></label>
+    
+    			<header>
+    				<div class="position">Technical Lead</div>
+    				<div class="company">CitisTech</div>
+    				<div class="date">
+    				  <span class="startDate">May 2012</span> 
+    					<span class="endDate">- February 2013</span> 
+    				</div>
+    			</header>
+    			
+    			<span class="location">
+    				<span class="fa fa-map-marker"></span> 
+    			</span>
+        	<span class="website">
+        		<a target="_blank" href="https://www.citiustech.com/">https://www.citiustech.com/</a>
+        	</span>  
+        	<ul class="keywords">
+          	<li>ASP.net</li>
+          	<li>ASP.net MVC</li>
+          	<li>C#</li>
+          	<li>JavaScript</li>
+          	<li>XML based WebServices</li>
+          	<li>Perforce SVN</li>
+        	</ul>
+        	<div class="item" id="work-item">
+            <div class="summary">
+              <p><p>CitiusTech is a leading provider of healthcare technology services and solutions to medical technology companies, providers, payers and life sciences organizations. </p><p>As a Tech Lead, I was responsible for leasing with a major Life Sciences company to help maintain a large web-based medical imaging application.</p></p>
+            </div>
+            <ul class="highlights">
+                <li><p>Understood the inner workings of a Javascript DICOM viewer. Helped with solving bugs and implementing new features in web annotations.</p></li>
+                <li><p>Part of the design team building a roadmap for rewriting the medical imaging application using ASP.net MVC 4.0</p></li>
+            </ul>
+        	</div>
+        </section>
+        <section class="work-item">
+    
+            <input id="work-item-2" type="checkbox" class="toggle-item" />
+            <label for="work-item-2"></label>
+    
+    			<header>
+    				<div class="position">Senior Software Engineer</div>
+    				<div class="company">ISG eSolutions</div>
+    				<div class="date">
+    				  <span class="startDate">May 2009</span> 
+    					<span class="endDate">- April 2012</span> 
+    				</div>
+    			</header>
+    			
+    			<span class="location">
+    				<span class="fa fa-map-marker"></span> 
+    			</span>
+        	<span class="website">
+        		<a target="_blank" href="https://www.isgesolutions.com/">https://www.isgesolutions.com/</a>
+        	</span>  
+        	<ul class="keywords">
+          	<li>ASP.NET</li>
+          	<li>MS SQL 2005/2008</li>
+          	<li>C#</li>
+          	<li>JavaScript</li>
+          	<li>HTML</li>
+          	<li>Sitefinity CMS</li>
+          	<li>JQuery</li>
+          	<li>Telerik</li>
+          	<li>ajax</li>
+          	<li>Memcache</li>
+          	<li>Multi-Threading</li>
+          	<li>MongoDb</li>
+          	<li>Webservices</li>
+          	<li>Web APIs</li>
+          	<li>Backbone.js</li>
+          	<li>jQuery</li>
+          	<li>LESS</li>
+        	</ul>
+        	<div class="item" id="work-item">
+            <div class="summary">
+              <p><p>ISG eSolutions is a specialized provider of hospitality solutions to various hotels and restaurants in India and abroad. They also provide travel solutions, both web and desktop based, to several UK based travel websites.</p><p>As a senior engineer on the engineering team, I led development efforts, designed and implemented platform architecture, and managed other engineering team members</p></p>
+            </div>
+            <ul class="highlights">
+                <li><p>Developed competitor analysis platform to analyze and report current prices and routes being offered by other players in the lowcost flights market. The system was built using phantom.js to write web scrapers that ran at specified intervals to scrape competitor websites to discover and report back with prices for programmed routes.</p></li>
+                <li><p>Developed a low latency, highly available web feed to be consumed by a travel metasearch engine. This helped with exposing our client’s products to more customers.</p></li>
+                <li><p>Designed and implemented the booking module for a travel website with integrations to popular third-party travel booking supplier web services like ABCBeds, GlobeTravel, TuricoHolidays, LowCostBeds, Hotels4U, HolidayTeamFlight, HolidayTaxi, HolidayBrokers etc to provide full itinerary building capabilities</p></li>
+                <li><p>Integrated the travel website with a payment gateway to enable safe and secure online payments.</p></li>
+                <li><p>Lead development of a UK based travel website in ASP.net and Sitefinity CMS but without using standard heavy asp.net controls. Instead, a pseudo SPA was built using plain HTML and JavaScript relegating ASP.net to only render the initial page and serve as the REST API afterwards. This was before the popularity of ASP.net MVC</p></li>
+                <li><p>Designed a multi-threaded module to fetch and generate a deals table using data from multiple web sources. This was combined with weather information and other details to form a comparative grid showcasing the best time in a year to visit a given destination.</p></li>
+            </ul>
+        	</div>
+        </section>
+        <section class="work-item">
+    
+            <input id="work-item-3" type="checkbox" class="toggle-item" />
+            <label for="work-item-3"></label>
+    
+    			<header>
+    				<div class="position">Engineering Intern</div>
+    				<div class="company">Nokia</div>
+    				<div class="date">
+    				  <span class="startDate">June 2007</span> 
+    					<span class="endDate">- June 2008</span> 
+    				</div>
+    			</header>
+    			
+    			<span class="location">
+    				<span class="fa fa-map-marker"></span> 
+    			</span>
+        	<span class="website">
+        		<a target="_blank" href="https://www.nokia.com/">https://www.nokia.com/</a>
+        	</span>  
+        	<ul class="keywords">
+          	<li>Symbian C++</li>
+          	<li>Perl</li>
+          	<li>Python</li>
+          	<li>XML</li>
+          	<li>UML</li>
+          	<li>Java</li>
+          	<li>Symbian OS</li>
+          	<li>Series 60</li>
+          	<li>UIQ</li>
+          	<li>Android</li>
+          	<li>Enterprise Architect</li>
+        	</ul>
+        	<div class="item" id="work-item">
+            <div class="summary">
+              <p><p>Symbian Software Limited develops and markets operating system software used by Nokia, Motorola Samsung mobile, and smartphones.</p><p>Worked with the Location and Connect team within Symbian in Cambridge. The team focused on integrating location-based services into Symbian’s mobile OS</p></p>
+            </div>
+            <ul class="highlights">
+                <li><p>Wrote a technology demonstrator by modifying the hardware abstraction layer of the Symbian Location-Based Services subsystem to work on a production phone (Sony Ericson M600i) with a Bluetooth GPS device instead of an integrated GPS chip.</p></li>
+                <li><p>Worked with the Bluetooth subsystems team to understand the Bluetooth stack being used in Symbian OS</p></li>
+                <li><p>Designed and implemented automation scripts in Perl which parse XML files generated by Enterprise Architect. These files contained sequence diagrams and the script compressed the diagram to hide internal complexities of the LBS subsystem before it is shipped as documentation to customers</p></li>
+            </ul>
+        	</div>
+        </section>
+        <section class="work-item">
+    
+            <input id="work-item-4" type="checkbox" class="toggle-item" />
+            <label for="work-item-4"></label>
+    
+    			<header>
+    				<div class="position">Junior Software Engineer</div>
+    				<div class="company">Interface Systems Group</div>
+    				<div class="date">
+    				  <span class="startDate">July 2005</span> 
+    					<span class="endDate">- May 2006</span> 
+    				</div>
+    			</header>
+    			
+    			<span class="location">
+    				<span class="fa fa-map-marker"></span> 
+    			</span>
+        	<span class="website">
+        		<a target="_blank" href="http://www.interfacesystemsgroup.com/">http://www.interfacesystemsgroup.com/</a>
+        	</span>  
+        	<ul class="keywords">
+          	<li>C#</li>
+          	<li>VB.NET</li>
+          	<li>SQL</li>
+          	<li>HTML</li>
+          	<li>JavaScript</li>
+          	<li>XML</li>
+          	<li>CSS</li>
+          	<li>ASP.NET</li>
+          	<li>MS SQL</li>
+          	<li>LLBL gen pro</li>
+        	</ul>
+        	<div class="item" id="work-item">
+            <div class="summary">
+              <p><p>Interface Systems Group is a leading Service Provider of Software development, website designing & hosting and tours management Software. </p><p>Job profile included developing, testing and maintaining web applications.</p></p>
+            </div>
+            <ul class="highlights">
+                <li><p>Absorbed into the company after an internship with them for 6 months.</p></li>
+                <li><p>Developed a web-based MIS software with graphical data analysis tools to manage multiple restaurants.</p></li>
+                <li><p>Designed and developed a recipe planner for restaurants that enabled chefs to perform costing of recipes based on ingredient quantities and keep an inventory of stock.</p></li>
+            </ul>
+        	</div>
+        </section>
+      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Education <span class="item-count">(2)</span></h2>
+      </header>
+    
+      <section id="education">
+        <section class="education-item">
+          <header>
+            <div class="header-left">
+              <div class="studyType">
+                PG-Dip
+              </div>
+              <div class="area">
+                Internet and Enterprise Computing
+              </div>
+              <div class="institution">
+                Nottingham Trent University
+              </div>
+            </div>
+            <div class="date">
+              <span class="startDate">
+              2006
+              </span>
+              <span class="endDate">
+              - 2008
+              </span>
+            </div>
+          </header>
+    
+    
+          <ul class="courses">
+            <li>Intelligent Business Systems</li>
+            <li>Intelligent Systems (AI)</li>
+            <li>Enterprise Computing</li>
+            <li>Object Oriented Analysis &amp; Design</li>
+            <li>Internet Programming</li>
+            <li>Advanced Computer Networks</li>
+            <li>Security in Computing</li>
+            <li>Data Structures</li>
+          </ul>
+    
+          <div class="item">
+            <div class='gpa'>
+              <strong> Grade:</strong> <span>High 2:1</span>
+            </div>
+          </div>
+        </section>
+        <section class="education-item">
+          <header>
+            <div class="header-left">
+              <div class="studyType">
+                Bachelor of Engineering
+              </div>
+              <div class="area">
+                Computer Engineering
+              </div>
+              <div class="institution">
+                Don Bosco Institute of Technology - Mumbai University 
+              </div>
+            </div>
+            <div class="date">
+              <span class="startDate">
+              2001
+              </span>
+              <span class="endDate">
+              - 2005
+              </span>
+            </div>
+          </header>
+    
+    
+    
+          <div class="item">
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="section margin1">
+      <header>
+        <h2 class='section-title'>Languages</h2>
+      </header>
+      <section id="languages">
+        <div class="display">
+          <h3 class="language">
+            English
+          </h3>
+          <div class="item">
+            <div class="level fluency native speaker">
+              <em>Native speaker</em>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="display">
+          <h3 class="language">
+            Hindi
+          </h3>
+          <div class="item">
+            <div class="level fluency native speaker">
+              <em>Native speaker</em>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="display">
+          <h3 class="language">
+            Malayalam
+          </h3>
+          <div class="item">
+            <div class="level fluency native speaker">
+              <em>Native speaker</em>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="display">
+          <h3 class="language">
+            Marathi
+          </h3>
+          <div class="item">
+            <div class="level fluency beginner">
+              <em>Beginner</em>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="section margin1">
+      <header>
+        <h2 class='section-title' class='section-title'>Interests</h2>
+      </header>
+      <section id="interests">
+        <div class="item">
+          <h3 class="name">
+            Reading
+          </h3>
+          <ul class="keywords">
+            <li>Science Fiction</li>
+            <li>Biographies</li>
+            <li>Technology</li>
+            <li>Military History</li>
+            <li>Aircrafts</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3 class="name">
+            Table Top Gaming
+          </h3>
+        </div>
+        <div class="item">
+          <h3 class="name">
+            Cooking
+          </h3>
+        </div>
+      </section>
+    </section>
+
+  </body>
+</html>

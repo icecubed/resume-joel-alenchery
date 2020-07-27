@@ -1,0 +1,18 @@
+{
+  "name": "resume-joel-alenchery",
+  "version": "1.0.0",
+  "description": "A simple static site serving the resume of Joel Alenchery",
+  "engines": {
+    "node": "12.x"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joel Alenchery",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
