@@ -624,6 +624,53 @@
             visibility: hidden;
         }
 
+        .btn-download {
+            position: static
+        }
+
+        .btn-download .tooltip-text {
+            position: fixed;
+            bottom: 35px;
+            /* Vertically center with the button (20px button margin + 25px to center) */
+            right: 80px;
+            /* Position to the left of the button (20px button margin + 50px button width + 10px spacing) */
+
+            /* Other tooltip styling */
+            visibility: hidden;
+            width: 120px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 12px;
+        }
+
+        /* Reposition the arrow to point right */
+        .btn-download .tooltip-text::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: -10px;
+            /* Position on right side of tooltip */
+            margin-top: -5px;
+            /* Center vertically */
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent transparent #555;
+            /* Point to the right */
+        }
+
+        /* Show tooltip on hover */
+        .btn-download a:hover+.tooltip-text,
+        .btn-download .tooltip-text:hover {
+            visibility: visible;
+            opacity: 1;
+        }
+
         .btn-download a {
             position: fixed;
             width: 50px;
@@ -656,6 +703,7 @@
             margin-top: 12px;
             color: red;
         }
+
 
         /******************
 *	HELPER CLASSES
@@ -939,35 +987,19 @@
                         </span>
                     </div>
                 </div>
-                <div class="item">
+                <!-- <div class="item">
                     <div class="username">
                         <span class="fa fa-github github social"></span>
                         <span class="url">
                             <a target="_blank" href="https://github.com/icecubed">icecubed</a>
                         </span>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="username">
-                        <span class="fa fa-twitter twitter social"></span>
-                        <span class="url">
-                            <a target="_blank" href="https://twitter.com/icecubed">icecubed</a>
-                        </span>
-                    </div>
-                </div>
+                </div> -->
                 <div class="item">
                     <div class="username">
                         <span class="fa fa-instagram instagram social"></span>
                         <span class="url">
                             <a target="_blank" href="https://www.instagram.com/joelalen">joelalen</a>
-                        </span>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="username">
-                        <span class="fa fa-gitconnected gitconnected social"></span>
-                        <span class="url">
-                            <a target="_blank" href="https://gitconnected.com/icecubed">icecubed</a>
                         </span>
                     </div>
                 </div>
@@ -1762,7 +1794,7 @@
     </div>
     <div id="download-pdf" class="btn-download">
         <a download="Resume | Joel Alenchery | Full Stack Engineer | Architect.pdf"
-            href="/docs/Resume-Joel_Alenchery-Full_Stack_Engineer-Architect.pdf">
+            href="/resume.pdf">
             <i class="fa fa-file-pdf-o fa-2x"></i>
         </a>
         <span class="tooltip-text">download a copy</span>
