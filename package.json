@@ -13,6 +13,9 @@
   "author": "Joel Alenchery",
   "license": "ISC",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "jsonresume-theme-stackoverflow": "file:jsonresume-theme-stackoverflow",
+    "resume-cli": "^3.0.8",
+    "resumed": "^5.0.0"
   }
 }

@@ -1,0 +1,310 @@
+{
+    "basics": {
+      "name": "Joel Alenchery",
+      "label": "Engineering Manager [Frontend Platform] @Forto",
+      "image": "https://avatars0.githubusercontent.com/u/107628?v=4",
+      "email": "joel@alenchery.org",
+      "location": {
+        "city": "Berlin",
+        "countryCode": "DE"
+      },
+      "summary": "A strategic engineering leader and full stack professional with over 15 years of experience building and scaling technology teams. My passion lies in creating efficient development ecosystems while enabling engineers to perform their roles effectively. I have successfully built and led frontend platform teams, established engineering vision and culture, and implemented design systems that bridge technical and design disciplines. My technical foundation includes architecting horizontally scalable backends, distributed RESTful API services, and modern, highly interactive web applications using frameworks like React, Angular, and Vue. I excel at identifying cross-cutting concerns, driving standardization, and fostering collaboration across engineering, design, and product teams to deliver exceptional user experiences.",
+      "profiles": [
+        {
+          "network": "LinkedIn",
+          "username": "joel-alenchery",
+          "url": "https://www.linkedin.com/in/joel-alenchery"
+        },
+        {
+          "network": "GitHub",
+          "username": "icecubed",
+          "url": "https://github.com/icecubed"
+        },
+        {
+          "network": "Twitter",
+          "username": "icecubed",
+          "url": "https://twitter.com/icecubed"
+        },
+        {
+          "network": "Instagram",
+          "username": "joelalen",
+          "url": "https://www.instagram.com/joelalen"
+        },
+        {
+          "network": "GitConnected",
+          "username": "icecubed",
+          "url": "https://gitconnected.com/icecubed"
+        }
+      ]
+    },
+    "work": [
+      {
+        "company": "Forto",
+        "position": "Engineering Manager, UI Platform Team",
+        "website": "https://forto.com/",
+        "startDate": "2022-04",
+        "summary": "Forto is a leading digital freight forwarder and supply chain technology platform transforming the movement of goods across the globe. The company combines data analytics, integrated logistics processes, and a scalable technology platform. Founding leader of the UI Platform team addressing cross-cutting frontend concerns and bridging engineering, design, and product disciplines.",
+        "highlights": [
+          "Founded and scaled the UI Platform team, establishing its vision, mission, and culture while recruiting 4 talented engineers (3 senior, 1 junior).",
+          "Identified and prioritized engineering pain points through platform-wide surveys and stakeholder interviews, creating data-driven roadmaps aligned with both developer experience and business goals.",
+          "Led the standardization of frontend-to-backend communication by developing a unified HTTP library, centralizing authentication, logging, and monitoring while reducing onboarding time for new engineers.",
+          "Orchestrated a complex, organization-wide migration from Material UI v4 to v5, implementing a bridge solution that allowed gradual upgrades without disrupting product development.",
+          "Designed and built an observability dashboard tracking migration progress, enabling teams to identify specific areas needing attention with exact file locations and line numbers.",
+          "Established a cross-team task force of volunteer engineers to drive the component library migration, reducing completion time from an estimated 18 months to 6-8 months.",
+          "Partnered with design leadership to implement design tokens and create automated workflows from Figma to production code, eliminating manual color and typography updates.",
+          "Led the development of Forto's first comprehensive design system for the customer-facing Ship application, dramatically reducing development time and design-engineering handoff friction.",
+          "Modernized the frontend build system by upgrading from Webpack to Vite, reducing cold start times from 90+ seconds to under 1 second and cutting hot module replacement times to near-instant.",
+          "Initiated and managed the \"Pixel to Product\" newsletter to improve cross-functional communication about platform changes and upcoming improvements."
+        ],
+        "keywords": [
+          "React", "TypeScript", "Material UI", "Radix Ul", "Tailwind", "Design Systems", 
+          "Design Tokens", "Figma Integration", "Vite", "Webpack", "CI/CD", 
+          "Roadmaps and OKR planning", "Developer Experience", "Agile Methodology", 
+          "Cross-cutting concerns", "Cross-functional Collaboration"
+        ]
+      },
+      {
+        "company": "Nexsales Inc",
+        "position": "Principal Software Architect",
+        "website": "http://www.nexsales.com/",
+        "startDate": "2016-03",
+        "endDate": "2022-04",
+        "summary": "Nexsales is a sales acceleration company specializing in demand generation and lead discovery. As their principal architect, I was instrumental in designing and bringing to market 2 major products from scratch.",
+        "highlights": [
+          "Products that I helped build from the ground up: Voicereach: A sales conversation enabler with an SLA to provide 8X boost in productivity; RightLeads: A proprietary lead discovery engine using machine learning to find and score relevant leads in an ever-growing database focusing on IT security.",
+          "Main responsibilities included design, develop, test, deploy, maintain and improve software inside an agile development framework. Manage individual project priorities, deadlines and deliverables. Mentor and grow a team of 5 software engineers.",
+          "Worked closely with customers to understand opportunities where technology can be used to drive business efficiently and effectively.",
+          "Early adopters of a single-page app in AngularJS leveraging WebRTC to implement VoIP in browser.",
+          "Studied user behavior to optimize role-based user experience leveraging material design.",
+          "Studied B2B marketing practices and designed closed-loop marketing strategy and successfully implement the ideas into the VoiceReach product.",
+          "Designed a highly reactive, stateful, web-socket based real-time UI to enable browser-based VoIP capabilities.",
+          "Involved in implementing distributed VoIP backend with Freeswitch and Twilio.",
+          "Feature & technical design for resilient REST-based microservices in NodeJS.",
+          "Technical design of horizontally scalable and highly available data store using Riak DB.",
+          "UI and backend to deliver a fast intuitive way to build complex search queries over a large data set of contacts to deliver a seamless contact list build experience.",
+          "Technical design of a git like structure to keep track of data as it evolved and changed in a NoSQL data store.",
+          "Design and implementation of scalable distributed file processing pipeline to enable processing and ingestion of large data files (100k to 10M records) using only Google Cloud Platform services."
+        ],
+        "keywords": [
+          "NodeJs", "AngularJs", "VueJS", "Riak", "MYSql", "PostgreSQL", "BeanstalkD", 
+          "Redis", "MemCache", "Solr", "Webpack", "Material Design", "WebRTC", 
+          "WebSockets", "REST APIs", "JIRA", "Confluence", "Git", "Jenkins", 
+          "Cloud Compute Engine", "Cloud Functions", "Cloud Run", "Cloud Pub Sub", 
+          "Cloud Tasks", "Cloud Build", "Docker", "Terraform"
+        ]
+      },
+      {
+        "company": "CitiusTech",
+        "position": "Technical Lead",
+        "website": "https://www.citiustech.com/",
+        "startDate": "2012-05",
+        "endDate": "2013-02",
+        "summary": "CitiusTech is a leading provider of healthcare technology services and solutions to medical technology companies, providers, payers and life sciences organizations. As a Tech Lead, I was responsible for leasing with a major Life Sciences company to help maintain a large web-based medical imaging application.",
+        "highlights": [
+          "Understood the inner workings of a Javascript DICOM viewer. Helped with solving bugs and implementing new features in web annotations.",
+          "Part of the design team building a roadmap for rewriting the medical imaging application using ASP.net MVC 4.0."
+        ],
+        "keywords": [
+          "ASP.net", "ASP.net MVC", "C#", "JavaScript", "XML based WebServices", "Perforce SVN"
+        ]
+      },
+      {
+        "company": "ISG eSolutions",
+        "position": "Senior Software Engineer",
+        "website": "https://www.isgesolutions.com/",
+        "startDate": "2009-05",
+        "endDate": "2012-04",
+        "summary": "ISG eSolutions is a specialized provider of hospitality solutions to various hotels and restaurants in India and abroad. They also provide travel solutions, both web and desktop based, to several UK based travel websites. As a senior engineer on the engineering team, I led development efforts, designed and implemented platform architecture, and managed other engineering team members.",
+        "highlights": [
+          "Developed competitor analysis platform to analyze and report current prices and routes being offered by other players in the low-cost flights market. The system was built using phantom.js to write web scrapers that ran at specified intervals to scrape competitor websites to discover and report back with prices for programmed routes.",
+          "Developed a low latency, highly available web feed to be consumed by a travel metasearch engine. This helped with exposing our client's products to more customers.",
+          "Designed and implemented the booking module for a travel website with integrations to popular third-party travel booking supplier web services like ABCBeds, GlobeTravel, TuricoHolidays, LowCostBeds, Hotels4U, HolidayTeamFlight, HolidayTaxi, HolidayBrokers etc to provide full itinerary building capabilities.",
+          "Integrated the travel website with a payment gateway to enable safe and secure online payments.",
+          "Lead development of a UK based travel website in ASP.net and Sitefinity CMS but without using standard heavy asp.net controls. Instead, a pseudo SPA was built using plain HTML and JavaScript relegating ASP.net to only render the initial page and serve as the REST API afterwards. This was before the popularity of ASP.net MVC.",
+          "Designed a multi-threaded module to fetch and generate a deals table using data from multiple web sources. This was combined with weather information and other details to form a comparative grid showcasing the best time in a year to visit a given destination."
+        ],
+        "keywords": [
+          "ASP.NET", "MS SQL 2005/2008", "C#", "JavaScript", "HTML", "Sitefinity CMS", 
+          "JQuery", "Telerik", "ajax", "Memcache", "Multi-Threading", "MongoDb", 
+          "Webservices", "Web APIs", "Backbone.js", "jQuery", "LESS"
+        ]
+      },
+      {
+        "company": "Nokia",
+        "position": "Engineering Intern",
+        "website": "https://www.nokia.com/",
+        "startDate": "2007-06",
+        "endDate": "2008-06",
+        "summary": "Symbian Software Limited develops and markets operating system software used by Nokia, Motorola Samsung mobile, and smartphones. Worked with the Location and Connect team within Symbian in Cambridge. The team focused on integrating location-based services into Symbian's mobile OS.",
+        "highlights": [
+          "Wrote a technology demonstrator by modifying the hardware abstraction layer of the Symbian Location-Based Services subsystem to work on a production phone (Sony Ericson M600i) with a Bluetooth GPS device instead of an integrated GPS chip.",
+          "Worked with the Bluetooth subsystems team to understand the Bluetooth stack being used in Symbian OS.",
+          "Designed and implemented automation scripts in Perl which parse XML files generated by Enterprise Architect. These files contained sequence diagrams and the script compressed the diagram to hide internal complexities of the LBS subsystem before it is shipped as documentation to customers."
+        ],
+        "keywords": [
+          "Symbian C++", "Perl", "Python", "XML", "UML", "Java", "Symbian OS", 
+          "Series 60", "UIQ", "Android", "Enterprise Architect"
+        ]
+      },
+      {
+        "company": "Interface Systems Group",
+        "position": "Junior Software Engineer",
+        "website": "http://www.interfacesystemsgroup.com/",
+        "startDate": "2005-07",
+        "endDate": "2006-05",
+        "summary": "Interface Systems Group is a leading Service Provider of Software development, website designing & hosting and tours management Software. Job profile included developing, testing and maintaining web applications.",
+        "highlights": [
+          "Absorbed into the company after an internship with them for 6 months.",
+          "Developed a web-based MIS software with graphical data analysis tools to manage multiple restaurants.",
+          "Designed and developed a recipe planner for restaurants that enabled chefs to perform costing of recipes based on ingredient quantities and keep an inventory of stock."
+        ],
+        "keywords": [
+          "C#", "VB.NET", "SQL", "HTML", "JavaScript", "XML", "CSS", "ASP.NET", 
+          "MS SQL", "LLBL gen pro"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "institution": "Nottingham Trent University",
+        "area": "Internet and Enterprise Computing",
+        "studyType": "PG-Dip",
+        "startDate": "2006",
+        "endDate": "2008",
+        "gpa": "High 2:1",
+        "courses": [
+          "Intelligent Business Systems",
+          "Intelligent Systems (AI)",
+          "Enterprise Computing",
+          "Object Oriented Analysis & Design",
+          "Internet Programming",
+          "Advanced Computer Networks",
+          "Security in Computing",
+          "Data Structures"
+        ]
+      },
+      {
+        "institution": "Don Bosco Institute of Technology - Mumbai University",
+        "area": "Computer Engineering",
+        "studyType": "Bachelor of Engineering",
+        "startDate": "2001",
+        "endDate": "2005"
+      }
+    ],
+    "skills": [
+      {
+        "name": "Engineering Leadership",
+        "level": "Advanced",
+        "keywords": [
+          "Team Building",
+          "Engineering Strategy",
+          "Cross-functional Collaboration",
+          "Technical Mentorship",
+          "Developer Experience"
+        ]
+      },
+      {
+        "name": "Techniques",
+        "level": "Advanced",
+        "keywords": [
+          "Web applications",
+          "Distributed architecture",
+          "Micro services",
+          "Mobile First, Responsive design",
+          "Test-driven development",
+          "Agile methodology",
+          "Stateful UI Design"
+        ]
+      },
+      {
+        "name": "Frontend",
+        "level": "Advanced",
+        "keywords": [
+          "React",
+          "TypeScript",
+          "Design Systems",
+          "Material UI",
+          "Radix UI",
+          "Tailwind CSS",
+          "AngularJS",
+          "VueJS",
+          "HTML",
+          "CSS"
+        ]
+      },
+      {
+        "name": "Backend",
+        "level": "Advanced",
+        "keywords": [
+          "NodeJS",
+          "Python"
+        ]
+      },
+      {
+        "name": "Data Stores",
+        "level": "Advanced",
+        "keywords": [
+          "MySQL",
+          "PostgreSQL",
+          "Riak",
+          "Solr",
+          "Redis",
+          "MemcacheD"
+        ]
+      },
+      {
+        "name": "Devops",
+        "level": "Intermediate",
+        "keywords": [
+          "Google Cloud",
+          "Docker",
+          "Jenkins",
+          "Circle CI"
+        ]
+      }
+    ],
+    "languages": [
+      {
+        "language": "English",
+        "fluency": "Native speaker"
+      },
+      {
+        "language": "Hindi",
+        "fluency": "Native speaker"
+      },
+      {
+        "language": "Malayalam",
+        "fluency": "Native speaker"
+      },
+      {
+        "language": "Marathi",
+        "fluency": "Beginner"
+      },
+      {
+        "language": "German",
+        "fluency": "Beginner"
+      }
+    ],
+    "interests": [
+      {
+        "name": "Reading",
+        "keywords": [
+          "Science Fiction",
+          "Biographies",
+          "Technology",
+          "Military History",
+          "Aircrafts"
+        ]
+      },
+      {
+        "name": "Table Top Gaming"
+      },
+      {
+        "name": "Cooking"
+      }
+    ],
+    "meta": {
+      "theme": "jsonresume-theme-stackoverflow",
+      "lastModified": "2025-04-17"
+    }
+  }
